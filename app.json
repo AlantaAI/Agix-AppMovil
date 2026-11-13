@@ -1,0 +1,44 @@
+{
+  "expo": {
+    "name": "Agix",
+    "slug": "agix",
+    "scheme": "agix",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "app.agix.mobile"
+    },
+    "android": {
+      "package": "app.agix.mobile",
+      "adaptiveIcon": {
+        "backgroundColor": "#1553CC",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-font",
+      "expo-web-browser",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 160,
+          "resizeMode": "contain",
+          "backgroundColor": "#1553CC"
+        }
+      ],
+      "expo-status-bar"
+    ]
+  }
+}
